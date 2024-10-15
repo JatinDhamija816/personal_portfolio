@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 shadow-md w-full z-50">
+    <div className="bg-gray-100 dark:bg-gray-900 shadow-md fixed w-full z-50">
       <div className="px-5 py-4 flex justify-between items-center">
         <div>
           <p className="text-gray-900 dark:text-gray-50 text-4xl font-mono hover:italic transition">
