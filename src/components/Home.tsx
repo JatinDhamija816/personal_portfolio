@@ -1,6 +1,9 @@
 const Home = () => {
   return (
-    <div className="bg-gray-800 min-h-screen flex items-center justify-center">
+    <div
+      id="home"
+      className="bg-gray-800 min-h-screen flex items-center justify-center"
+    >
       <div className="p-10 text-center space-y-6">
         <p className="text-5xl font-bold text-cyan-500">Jatin Dhamija</p>
         <p className="text-xl text-gray-300">Full Stack Developer</p>

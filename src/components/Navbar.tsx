@@ -1,16 +1,18 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    "About",
-    "Experience",
-    "Education",
-    "Skills",
-    "Projects",
-    "Contact",
+    { id: 1, link: "home" },
+    { id: 2, link: "about" },
+    { id: 5, link: "experience" },
+    { id: 5, link: "education" },
+    { id: 3, link: "skills" },
+    { id: 4, link: "projects" },
+    { id: 6, link: "contact" },
   ];
 
   return (
@@ -31,14 +33,16 @@ const Navbar = () => {
         </div>
 
         <ul className="hidden md:flex space-x-6">
-          {links.map((item) => (
+          {links.map((link) => (
             <li
-              key={item}
-              className="rounded-md px-4 py-2 transition text-gray-900 dark:text-gray-50 hover:text-white"
+              key={link.id}
+              className="rounded-md px-2 py-2 transition text-gray-900 dark:text-gray-50 hover:text-white"
             >
-              <p className="uppercase border-b-2 border-gray-900 hover:border-white">
-                {item}
-              </p>
+              <Link to={link.link} smooth duration={500}>
+                <p className="uppercase border-b-2 border-gray-900 hover:border-white">
+                  {link.link}
+                </p>
+              </Link>
             </li>
           ))}
         </ul>
@@ -48,14 +52,15 @@ const Navbar = () => {
         <div className="md:hidden bg-gray-100 dark:bg-gray-900 px-6 py-4 shadow-lg space-y-4 items-center justify-center flex-col">
           {links.map((item) => (
             <div
-              key={item}
+              key={item.id}
               onClick={() => setIsOpen(false)}
               className="flex items-center cursor-pointer rounded-md px-4 py-2 transition text-gray-900 dark:text-gray-50 hover:text-white justify-center"
             >
-              <p className="uppercase border-b-2 border-gray-900 hover:border-white">
-                {" "}
-                {item}
-              </p>
+              <Link to={item.link} smooth duration={500}>
+                <p className="uppercase border-b-2 border-gray-900 hover:border-white">
+                  {item.link}
+                </p>
+              </Link>
             </div>
           ))}
         </div>

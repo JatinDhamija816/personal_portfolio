@@ -1,9 +1,12 @@
 const Experience = () => {
   return (
-    <div className="bg-gray-800 min-h-screen flex items-center justify-center">
+    <div
+      id="experience"
+      className="bg-gray-800 min-h-screen flex items-center justify-center"
+    >
       <div className="py-10 px-7 md:max-w-screen-lg">
         <p className="text-gray-50 text-2xl font-semibold py-10">Experience</p>
-        <div className="text-gray-300 font-ubuntu space-y-6">
+        <div className="text-gray-300 font-ubuntu space-y-2">
           <p className="py-2">
             Hello! I’m Jatin Dhamija, a Full Stack Developer with expertise in
             modern web and mobile technologies. My experience spans across
