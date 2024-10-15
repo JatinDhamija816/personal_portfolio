@@ -53,11 +53,13 @@ const Navbar = () => {
           {links.map((item) => (
             <div
               key={item.id}
-              onClick={() => setIsOpen(false)}
               className="flex items-center cursor-pointer rounded-md px-4 py-2 transition text-gray-900 dark:text-gray-50 hover:text-white justify-center"
             >
               <Link to={item.link} smooth duration={500}>
-                <p className="uppercase border-b-2 border-gray-900 hover:border-white">
+                <p
+                  onClick={() => setIsOpen(false)}
+                  className="uppercase border-b-2 border-gray-900 hover:border-white"
+                >
                   {item.link}
                 </p>
               </Link>
