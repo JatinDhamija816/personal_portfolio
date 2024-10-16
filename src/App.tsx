@@ -3,6 +3,7 @@ import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
+import Skills from "./components/Skills";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <About />
       <Experience />
       <Education />
+      <Skills />
     </div>
   );
 };

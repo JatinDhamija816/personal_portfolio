@@ -30,7 +30,7 @@ const Education = () => {
           {education.map(({ school, course, marks, year }, index) => (
             <div
               key={index}
-              className="w-full shadow-xl shadow-gray-600 bg-gray-900 p-5 rounded-lg md:w-full duration-200 hover:scale-105"
+              className="w-full shadow-xl shadow-gray-800 bg-gray-900 p-5 rounded-lg md:w-full duration-200 hover:scale-105"
             >
               <div className="flex flex-col sm:flex-row justify-between">
                 <h1 className="font-bold text-lg text-gray-50 pr-5">
