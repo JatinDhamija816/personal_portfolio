@@ -19,7 +19,7 @@ const Projects = () => {
       name: "Figma Page Conversion",
       description:
         "A simple conversion of a Figma design into a responsive web page using React, Vite, and Tailwind CSS. Demonstrates proficiency in front-end development and pixel-perfect design implementation.",
-      technologies: "React, Vite, Tailwind CSS",
+      technologies: "Vite-React Tailwind CSS",
       githubLink: "https://github.com/JatinDhamija816/finance_app_landing_page",
     },
   ];
